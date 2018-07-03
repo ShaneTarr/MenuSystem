@@ -9,6 +9,8 @@
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
 
+#include "PuzzlePlatformsGameInstance.h" 
+
 //////////////////////////////////////////////////////////////////////////
 // APuzzlePlatformsCharacter
 
@@ -74,6 +76,7 @@ void APuzzlePlatformsCharacter::SetupPlayerInputComponent(class UInputComponent*
 
 	// VR headset functionality
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &APuzzlePlatformsCharacter::OnResetVR);
+
 }
 
 
