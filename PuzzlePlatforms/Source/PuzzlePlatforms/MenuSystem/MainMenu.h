@@ -13,6 +13,7 @@ UCLASS()
 class PUZZLEPLATFORMS_API UMainMenu : public UMenuWidget
 {
 	GENERATED_BODY()
+
 protected:
 	virtual bool Initialize();
 
@@ -22,9 +23,6 @@ private:
 
 	UPROPERTY(meta = (BindWidget))
 		class UButton* JoinButton;
-
-	UPROPERTY(meta = (BindWidget))
-		class UButton* QuitButton;
 
 	UPROPERTY(meta = (BindWidget))
 		class UButton* CancelJoinMenuButton;
@@ -57,6 +55,4 @@ private:
 	UFUNCTION()
 		void OpenMainMenu();
 
-	UFUNCTION()
-		void QuitPressed();
 };
